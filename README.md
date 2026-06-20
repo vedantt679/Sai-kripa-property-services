@@ -1,1 +1,0 @@
-# Sai-kripa-property-services
