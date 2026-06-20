@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;meta name='viewport' content='width=device-width, initial-scale=1'/&gt;&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+&lt;title&gt;Sai Kripa Property Services&lt;/title&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;&gt;
+
+&lt;style&gt;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#0d1b2a;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+transition:.3s;
+}
+
+.logo{
+color:#fff;
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#25D366;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1560518883-ce09059eeffa');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 28px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#0d1b2a;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#0d1b2a;
+margin-bottom:15px;
+}
+
+.card ul{
+margin-left:20px;
+}
+
+.card li{
+margin-bottom:8px;
+}
+
+.stats{
+background:#0d1b2a;
+color:white;
+text-align:center;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+.counter{
+font-size:42px;
+font-weight:bold;
+color:#25D366;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+footer{
+background:#0d1b2a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+z-index:999;
+}
+
+.hidden{
+opacity:0;
+transform:translateY(40px);
+transition:.8s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+#topBtn{
+position:fixed;
+bottom:90px;
+right:20px;
+display:none;
+padding:12px 18px;
+border:none;
+border-radius:50%;
+background:#0d1b2a;
+color:white;
+cursor:pointer;
+font-size:18px;
+z-index:999;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:0 10px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;div class=&quot;logo&quot;&gt;
+Sai Kripa Property Services
+&lt;/div&gt;
+
+&lt;nav&gt;
+&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+&lt;a href=&quot;#buyers&quot;&gt;Buyers&lt;/a&gt;
+&lt;a href=&quot;#sellers&quot;&gt;Sellers&lt;/a&gt;
+&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;/header&gt;
+
+&lt;section class=&quot;hero&quot; id=&quot;home&quot;&gt;
+
+&lt;div class=&quot;hero-content&quot;&gt;
+
+&lt;h1&gt;Buy or Sell Property With Complete Confidence&lt;/h1&gt;
+
+&lt;p&gt;
+Property Verification • Inspection • Documentation • Marketing • Deal Management
+&lt;/p&gt;
+
+&lt;a href=&quot;https://wa.me/919575957549&quot; target=&quot;_blank&quot; class=&quot;btn&quot;&gt;
+&lt;i class=&quot;fab fa-whatsapp&quot;&gt;&lt;/i&gt;
+Get Free Property Consultation
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+&lt;h2 class=&quot;section-title&quot;&gt;Why Choose Us?&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Legal Verification&lt;/h3&gt;
+&lt;p&gt;Ownership, RERA, tax and document verification.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Investment Analysis&lt;/h3&gt;
+&lt;p&gt;Future growth and ROI evaluation.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Site Inspection&lt;/h3&gt;
+&lt;p&gt;Physical property and location assessment.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Complete Support&lt;/h3&gt;
+&lt;p&gt;From search to registration and possession.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section id=&quot;buyers&quot;&gt;
+
+&lt;h2 class=&quot;section-title&quot;&gt;Services for Property Buyers&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Property Verification&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ownership Verification&lt;/li&gt;
+&lt;li&gt;Encumbrance Check&lt;/li&gt;
+&lt;li&gt;Tax Verification&lt;/li&gt;
+&lt;li&gt;RERA Verification&lt;/li&gt;
+&lt;li&gt;Site Measurements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Property Inspection&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Water Availability&lt;/li&gt;
+&lt;li&gt;Road Access&lt;/li&gt;
+&lt;li&gt;Electricity Status&lt;/li&gt;
+&lt;li&gt;Construction Quality&lt;/li&gt;
+&lt;li&gt;Area Development Review&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Investment Advisory&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ROI Analysis&lt;/li&gt;
+&lt;li&gt;Rental Yield&lt;/li&gt;
+&lt;li&gt;Future Growth Analysis&lt;/li&gt;
+&lt;li&gt;Market Research&lt;/li&gt;
+&lt;li&gt;Location Assessment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Home Loan Assistance&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Eligibility Assessment&lt;/li&gt;
+&lt;li&gt;Bank Comparison&lt;/li&gt;
+&lt;li&gt;Documentation Support&lt;/li&gt;
+&lt;li&gt;Loan Processing Guidance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section id=&quot;sellers&quot;&gt;
+
+&lt;h2 class=&quot;section-title&quot;&gt;Services for Property Sellers&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Property Marketing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Professional Photography&lt;/li&gt;
+&lt;li&gt;Drone Video Creation&lt;/li&gt;
+&lt;li&gt;Facebook Marketing&lt;/li&gt;
+&lt;li&gt;Instagram Promotion&lt;/li&gt;
+&lt;li&gt;Buyer Lead Generation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Property Listing Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Listing Creation&lt;/li&gt;
+&lt;li&gt;Lead Management&lt;/li&gt;
+&lt;li&gt;Buyer Screening&lt;/li&gt;
+&lt;li&gt;Site Visit Scheduling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;Negotiation Support&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Buyer Verification&lt;/li&gt;
+&lt;li&gt;Price Negotiation&lt;/li&gt;
+&lt;li&gt;Deal Structuring&lt;/li&gt;
+&lt;li&gt;Offer Evaluation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+&lt;h3&gt;End-to-End Deal Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;Registry Coordination&lt;/li&gt;
+&lt;li&gt;Loan Coordination&lt;/li&gt;
+&lt;li&gt;Possession Support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class=&quot;stats&quot;&gt;
+
+&lt;h2 class=&quot;section-title&quot; style=&quot;color:white;&quot;&gt;
+Our Commitment
+&lt;/h2&gt;
+
+&lt;div class=&quot;stats-grid&quot;&gt;
+
+&lt;div&gt;
+&lt;div class=&quot;counter&quot; data-target=&quot;500&quot;&gt;0&lt;/div&gt;
+&lt;p&gt;Properties Reviewed&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;div class=&quot;counter&quot; data-target=&quot;100&quot;&gt;0&lt;/div&gt;
+&lt;p&gt;Happy Clients&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;div class=&quot;counter&quot; data-target=&quot;24&quot;&gt;0&lt;/div&gt;
+&lt;p&gt;Hour Response Time&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class=&quot;contact&quot; id=&quot;contact&quot;&gt;
+
+&lt;h2 class=&quot;section-title&quot;&gt;Contact Us&lt;/h2&gt;
+
+&lt;p&gt;WhatsApp: +91 95759 57549&lt;/p&gt;
+
+&lt;a href=&quot;https://wa.me/919575957549&quot;
+target=&quot;_blank&quot;
+class=&quot;btn&quot;&gt;
+Request Consultation
+&lt;/a&gt;
+
+&lt;/section&gt;
+
+&lt;footer&gt;
+&lt;p&gt;
+© 2026 Sai Kripa Property Services.
+All Rights Reserved.
+&lt;/p&gt;
+&lt;/footer&gt;
+
+&lt;a class=&quot;whatsapp-float&quot;
+href=&quot;https://wa.me/919575957549&quot;
+target=&quot;_blank&quot;&gt;
+&lt;i class=&quot;fab fa-whatsapp&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;button id=&quot;topBtn&quot;&gt;↑&lt;/button&gt;
+
+&lt;script&gt;
+
+window.addEventListener('scroll',()=&gt;{
+
+const header=document.querySelector('header');
+
+if(window.scrollY&gt;50){
+header.style.background='#08111c';
+header.style.boxShadow='0 5px 20px rgba(0,0,0,.2)';
+}else{
+header.style.background='#0d1b2a';
+header.style.boxShadow='none';
+}
+
+});
+
+const counters=document.querySelectorAll('.counter');
+
+counters.forEach(counter=&gt;{
+
+counter.innerText='0';
+
+const updateCounter=()=&gt;{
+
+const target=+counter.dataset.target;
+const current=+counter.innerText;
+
+const increment=target/100;
+
+if(current&lt;target){
+
+counter.innerText=Math.ceil(current+increment);
+
+setTimeout(updateCounter,20);
+
+}else{
+counter.innerText=target;
+}
+
+};
+
+updateCounter();
+
+});
+
+const observer=new IntersectionObserver(entries=&gt;{
+
+entries.forEach(entry=&gt;{
+
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+
+});
+
+});
+
+document.querySelectorAll('.card').forEach(el=&gt;{
+
+el.classList.add('hidden');
+observer.observe(el);
+
+});
+
+const topBtn=document.getElementById('topBtn');
+
+window.addEventListener('scroll',()=&gt;{
+
+if(window.scrollY&gt;400){
+topBtn.style.display='block';
+}else{
+topBtn.style.display='none';
+}
+
+});
+
+topBtn.addEventListener('click',()=&gt;{
+
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+
+});
+
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
