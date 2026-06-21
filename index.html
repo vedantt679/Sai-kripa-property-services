@@ -817,6 +817,66 @@ function launchConfetti(){
 }
 
 </script>
+<!-- ============================================================
+     ANTI-COPY PROTECTION SNIPPET
+     Paste this block just before the closing </body> tag of any
+     HTML page. Blocks: right-click menu, text selection/highlighting,
+     Ctrl+C / Ctrl+U / Ctrl+S / Ctrl+X, and dragging images out.
+
+     The #contact section (if your page has one with that id) stays
+     selectable, so visitors can still copy your phone number/address.
+     If you don't have a #contact section, that part simply does nothing.
+
+     LIMITS (read before relying on this): this only stops casual
+     copying. Browser dev tools (F12) and "view-source:" in the
+     address bar still show everything — no front-end script can
+     prevent that.
+     ============================================================ -->
+
+<style>
+  body{
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+  }
+  #contact, #contact *{
+    user-select:text;
+    -webkit-user-select:text;
+    -moz-user-select:text;
+    -ms-user-select:text;
+  }
+</style>
+
+<script>
+(function setupCopyProtection(){
+
+  const exemptSelector = '#contact, #contact *';
+
+  function isExempt(target){
+    return target.closest && target.closest(exemptSelector);
+  }
+
+  document.addEventListener('contextmenu', (e) => {
+    if (!isExempt(e.target)) e.preventDefault();
+  });
+
+  document.addEventListener('selectstart', (e) => {
+    if (!isExempt(e.target)) e.preventDefault();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    const blockedCombo =
+      (e.ctrlKey || e.metaKey) && ['c','u','s','x'].includes(e.key.toLowerCase());
+    if (blockedCombo && !isExempt(e.target)) e.preventDefault();
+  });
+
+  document.addEventListener('dragstart', (e) => {
+    if (e.target.tagName === 'IMG' && !isExempt(e.target)) e.preventDefault();
+  });
+
+})();
+</script>
 
 </body>
 </html>
