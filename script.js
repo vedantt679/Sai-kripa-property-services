@@ -1,4 +1,14 @@
+const cartBtn = document.getElementById("cartBtn");
+const cartSidebar = document.getElementById("cartSidebar");
+const closeCart = document.getElementById("closeCart");
 
+cartBtn.addEventListener("click", () => {
+    cartSidebar.classList.add("active");
+});
+
+closeCart.addEventListener("click", () => {
+    cartSidebar.classList.remove("active");
+});
 const buyerServices=["Ownership Verification","Registry Verification","RERA Verification","Legal Due Diligence","Site Inspection","Drone Survey","ROI Assessment","NRI Property Assistance"];
 const sellerServices=["Property Photography","Drone Videography","Facebook Marketing","Instagram Marketing","Lead Generation","Buyer Screening","Negotiation Support","Deal Management"];
 let cart=[];
