@@ -1,1 +1,0 @@
-console.log('Sai Kripa Property Services Loaded');
